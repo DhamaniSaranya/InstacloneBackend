@@ -15,6 +15,7 @@ router.post('/post/add', upload.single('file'), async (req, res) => {
       date: req.body.date,
     };
 
+    
     const saveData = new Post({
       ...data,
     });
